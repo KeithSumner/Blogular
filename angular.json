@@ -13,9 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs/Blogular/",
+            "outputPath": "docs/",
             "baseHref": "/Blogular/",
-            "deployUrl": "/Blogular/",
+            "deployUrl": "/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
