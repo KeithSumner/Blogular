@@ -22,7 +22,7 @@ export class PostService {
     this.postTypes["Image"] = ImageComponent;
     this.postTypes["Instagram"] = InstagramComponent;
 
-    http.get<IPost>("Blogular/content/posts/samplePost.json").subscribe(r => {
+    http.get<IPost>("./content/posts/samplePost.json").subscribe(r => {
       this.post.next(r); 
     });
   }

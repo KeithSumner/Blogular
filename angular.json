@@ -23,7 +23,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/Blogular/content"
+              "src/content"
             ],
             "styles": [
               "src/styles.css"
