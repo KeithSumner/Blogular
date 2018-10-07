@@ -1,0 +1,18 @@
+{
+    "title" : "",
+    "date" : "",
+    "content" : [
+        {
+            "type": "Youtube",
+            "data":{
+                "videoKey": "jnp_ny4SOQE"
+            }
+        },
+        {
+            "type": "Image",
+            "data": {
+                "uri": "testimage.jpg"
+            }
+        }
+    ]
+}
