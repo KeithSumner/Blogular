@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 import { YoutubeComponent } from '../components/youtube/youtube.component';
 import { ImageComponent } from '../components/image/image.component';
 import { InstagramComponent } from '../components/instagram/instagram.component';
-import { environment } from '../../environments/environment.prod';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
