@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "Blogular": {
-      "root": "",
+      "root": "Blogular",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
@@ -14,6 +14,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "docs/Blogular/",
+            "baseHref": "/Blogular/",
+            "deployUrl": "/Blogular/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
