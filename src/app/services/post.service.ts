@@ -5,6 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 import { YoutubeComponent } from '../components/youtube/youtube.component';
 import { ImageComponent } from '../components/image/image.component';
 import { InstagramComponent } from '../components/instagram/instagram.component';
+import { environment } from '../../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,7 @@ export class PostService {
     this.postTypes["Image"] = ImageComponent;
     this.postTypes["Instagram"] = InstagramComponent;
 
-    http.get<IPost>("./content/posts/samplePost.json").subscribe(r => {
+    http.get<IPost>(environment.dataLocation + "content/posts/samplePost.json").subscribe(r => {
       this.post.next(r); 
     });
   }
