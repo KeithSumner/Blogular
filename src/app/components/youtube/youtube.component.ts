@@ -16,7 +16,6 @@ export class YoutubeComponent implements OnInit, ContentComponent {
   constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    console.log(this.data.videoKey);
     this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.data.videoKey);
   }
 
@@ -24,4 +23,5 @@ export class YoutubeComponent implements OnInit, ContentComponent {
 
 class YoutubeData{
   public videoKey: string;
+  public description: string;
 }

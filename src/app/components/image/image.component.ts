@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageComponent implements OnInit {
 
+  public data: ImageData
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+class ImageData{
+  public uri: string;
+  public description: string;
 }

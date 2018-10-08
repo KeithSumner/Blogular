@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   constructor(public postService: PostService, private componentFactoryResolver: ComponentFactoryResolver) {
   }
 
-  title = 'SuperSite';
+  title = 'Blogular';
 
   ngOnInit()
   {

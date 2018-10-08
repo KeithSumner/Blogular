@@ -6,6 +6,8 @@ import { YoutubeComponent } from '../components/youtube/youtube.component';
 import { ImageComponent } from '../components/image/image.component';
 import { InstagramComponent } from '../components/instagram/instagram.component';
 import { environment } from '../../environments/environment';
+import { CodeComponent } from '../components/code/code.component';
+import { CopyComponent } from '../components/copy/copy.component';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +24,8 @@ export class PostService {
     this.postTypes["Youtube"] = YoutubeComponent;
     this.postTypes["Image"] = ImageComponent;
     this.postTypes["Instagram"] = InstagramComponent;
+    this.postTypes["Code"] = CodeComponent;
+    this.postTypes["Copy"] = CopyComponent;
 
     http.get<IPost>(environment.dataLocation + "content/posts/samplePost.json").subscribe(r => {
       this.post.next(r); 

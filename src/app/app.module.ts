@@ -11,6 +11,8 @@ import { TestComponentComponent } from './components/test-component/test-compone
 import { YoutubeComponent } from './components/youtube/youtube.component';
 import { InstagramComponent } from './components/instagram/instagram.component';
 import { ImageComponent } from './components/image/image.component';
+import { CodeComponent } from './components/code/code.component';
+import { CopyComponent } from './components/copy/copy.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ImageComponent } from './components/image/image.component';
     TestComponentComponent,
     YoutubeComponent,
     ImageComponent,
-    InstagramComponent
+    InstagramComponent,
+    CopyComponent,
+    CodeComponent
   ],
   declarations: [
     AppComponent,
@@ -27,7 +31,9 @@ import { ImageComponent } from './components/image/image.component';
     TestComponentComponent,
     YoutubeComponent,
     InstagramComponent,
-    ImageComponent
+    ImageComponent,
+    CodeComponent,
+    CopyComponent
   ],
   imports: [
     BrowserModule,

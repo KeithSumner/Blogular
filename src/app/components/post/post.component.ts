@@ -1,5 +1,5 @@
 import { Component, OnInit, Type, ViewChild, Directive, Injector, ApplicationRef, EmbeddedViewRef, ComponentFactoryResolver, ViewContainerRef } from '@angular/core';
-import { PostService, ContentComponent } from '../../services/post.service';
+import { PostService, ContentComponent, IPost } from '../../services/post.service';
 
 @Component({
   selector: 'app-post',
@@ -8,6 +8,8 @@ import { PostService, ContentComponent } from '../../services/post.service';
 })
 export class PostComponent implements OnInit {
 
+  public data: IPost;
+
   constructor(
     public postService: PostService, 
     private resolver: ComponentFactoryResolver,
@@ -15,6 +17,11 @@ export class PostComponent implements OnInit {
     {
 
     this.postService.post.subscribe(p => {
+      if(p){
+        this.data = p;
+      }
+      else{this.data = {title : "Null Post :)", content : [], date :null }}
+
       if(p && p.content){
         p.content.forEach(element => {
           const classT = postService.getClass(element.type);
